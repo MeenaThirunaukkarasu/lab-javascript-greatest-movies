@@ -124,6 +124,7 @@ describe('Function "scoresAverage"', () => {
   });
 
   it('should be rounded to 2 decimals places', () => {
+    console.log((scoresAverage([{ score: 8 }, { score: 9 }, { score: 9 }])))
     expect(scoresAverage([{ score: 8 }, { score: 9 }, { score: 9 }])).toBe(
       8.67
     );
